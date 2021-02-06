@@ -9,7 +9,7 @@ public class task4 {
     static Date[] timeOut;
 
     public static void main(String[] args) throws Exception {
-        String filePath = args[0];
+        String filePath = "test4.txt";
         BufferedReader reader = new BufferedReader(new FileReader(filePath));
         int lines = 0;
         while (reader.readLine() != null) {
@@ -52,6 +52,9 @@ public class task4 {
                     }
                     ++a;
                 } else if (ts2 == 0) {
+                    if (count == maxCount) {
+                        toIndex = b;
+                    }
                     ++a;
                     ++b;
                     time = timeIn[a];
