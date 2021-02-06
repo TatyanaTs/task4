@@ -9,7 +9,7 @@ public class task4 {
     static Date[] timeOut;
 
     public static void main(String[] args) throws Exception {
-        String filePath = "test4.txt";
+        String filePath = args[0];
         BufferedReader reader = new BufferedReader(new FileReader(filePath));
         int lines = 0;
         while (reader.readLine() != null) {
